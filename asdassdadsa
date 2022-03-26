@@ -1,5 +1,3 @@
-
-
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
 local win = DiscordLib:Window("Dahood Selling Gui - Says Gui")
@@ -7,6 +5,7 @@ local win = DiscordLib:Window("Dahood Selling Gui - Says Gui")
 local serv = win:Server("UhCrew", "http://www.roblox.com/asset/?id=6031075938")
 
 local h = serv:Channel("home")
+h:label("Hello there")
 local a = serv:Channel("selling")
      a:Toggle("AutoDrop (100)",false, function(bool)
         XXX = bool
