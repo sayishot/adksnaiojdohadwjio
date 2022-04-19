@@ -1,0 +1,692 @@
+repeat wait() until game:IsLoaded()
+pcall(function()
+    repeat wait() until game.Players.LocalPlayer.Character:FindFirstChild('FULLY_LOADED_CHAR')
+end)
+local plr = game.Players.LocalPlayer
+function Buy(Object)
+   local Object = Object
+   local LockPicker = Workspace.Ignored.Shop[Object]
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LockPicker.Head.CFrame + Vector3.new(0, 3, 0)
+   wait(0.2)
+   fireclickdetector(LockPicker.ClickDetector)
+   fireclickdetector(LockPicker.ClickDetector)
+end
+
+getgenv().DaHoodSettings = DaHoodSettings
+local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/Vape.txt")()
+local ESP = loadstring(game:HttpGet("https://kiriot22.com/releases/ESP.lua"))()
+ESP:Toggle(false)
+ESP.Tracers = false
+ESP.Names = false
+ESP.Boxes = false
+local win = lib:Window("Bunny X",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightShift)
+local h = win:Tab("home") local t = win:Tab("teleports") local b = win:Tab("buy") local l = win:Tab("aimlocks") local v = win:Tab("visuals") local s = win:Tab("simple")
+ h:Label("                                      Creators")
+
+h:Button("imsayfr#1573",function(output)
+	   setclipboard("imsayfr#1573")
+   end)
+	h:Button("Comparo#0001",function(bool)setclipboard("Comparo#0001")  end)
+		h:Button("eyee#0001",function(bool) setclipboard("eyee#0001") end) t:Button("casino",  function(bool) local plr = game.Players.LocalPlayer
+           plr.Character.HumanoidRootPart.CFrame = CFrame.new(38, 57, -1508)
+		   end)
+		   t:Button("bank",  function(bool) local plr = game.Players.LocalPlayer
+           plr.Character.HumanoidRootPart.CFrame = CFrame.new(857, 58, -1047) 
+		   end)
+		     t:Button("train",  function(bool) local plr = game.Players.LocalPlayer
+           plr.Character.HumanoidRootPart.CFrame = CFrame.new(785, 11, -1442)
+		   end)
+		     t:Button("museum",  function(bool) local plr = game.Players.LocalPlayer
+           plr.Character.HumanoidRootPart.CFrame = CFrame.new(-37, 58, -804) 
+		   end)
+		   t:Button("gym",  function(bool) local plr = game.Players.LocalPlayer
+           plr.Character.HumanoidRootPart.CFrame = CFrame.new(317, 98, -546)
+		   end) b:Button("[Surgeon Mask] - $25",function(bool)
+                local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Surgeon Mask] - $25")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+                                                                              b:Button("[High-Medium Armor] - $2300",function(bool)
+                	local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[High-Medium Armor] - $2300")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+                          b:Button("[Double-Barrel SG] - $1400",function(bool)
+                 	local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Double-Barrel SG] - $1400")
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+                          b:Button("[Revolver] - $1300",function(bool)
+                     local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Revolver] - $1300")
+Buy("12 [Revolver Ammo] - $75")wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1) 
+Buy("12 [Revolver Ammo] - $75")wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+                     b:Button("[MoneyGun] $777",function(bool)
+                     local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[MoneyGun] $777")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+                  b:Button("[HotDog] - $8",function(bool)
+                     local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[HotDog] - $8")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+                  b:Button("[Donut] - $5",function(bool)
+                     local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Donut] - $5")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+                  b:Button("[Popcorn] - $7",function(bool)
+                     local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Popcorn] - $7")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+                  b:Button("[Hamburger] - $10",function(bool)
+                     local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Hamburger] - $10")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+                  b:Button("[Taco] - $4",function(bool)
+                     local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Taco] - $4")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+                  b:Button("[Siopao] - $5",function(bool)
+                     local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Siopao] - $5")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+                  b:Button("[Apple] - $10",function(bool)
+                     local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Apple] - $10")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+                  b:Button("[Baguette] - $10",function(bool)
+                     local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Baguette] - $10")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+                  b:Button("[Banana] - $10",function(bool)
+                     local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Banana] - $10")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+ b:Label("Main ^")
+b:Button("[AK47] - $2250",function(bool)
+                	local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[AK47] - $2250")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+
+               b:Button("[Breathing Mask] - $60",function(bool)
+                 	local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Breathing Mask] - $60")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+                           b:Button("[Double-Barrel SG] - $1400",function(bool)
+                 	local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Double-Barrel SG] - $1400")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+                                
+                                                   b:Button("[Glock] - $500",function(bool)
+                 	local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Glock] - $500")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+                                        b:Button("[HeavyWeights] - $250",function(bool)
+                           	local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[HeavyWeights] - $250")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+                                                    b:Button("[High-Medium Armor] - $2300",function(bool)
+                	local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[High-Medium Armor] - $2300")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+                
+                          b:Button("[LMG] - $3750",function(bool)
+                	local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[LMG] - $3750")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+                                     
+              b:Button("[Ninja Mask] - $60",function(bool)
+              local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Ninja Mask] - $60")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+             b:Button("[P90] - $1000",function(bool)
+             local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[P90] - $1000")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+               b:Button("[Paintball Mask] - $60",function(bool)
+           local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Paintball Mask] - $60")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+              b:Button("[Pumpkin Mask] - $60",function(bool)
+            local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Pumpkin Mask] - $60")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+             b:Button("[Revolver] - $1300",function(bool)
+                     local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Revolver] - $1300")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+             
+                b:Button("[SMG] - $750",function(bool)
+                         local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[SMG] - $750")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+              b:Button("[Shotgun] - $1250",function(bool)
+                       local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Shotgun] - $1250")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+                b:Button("[SilencerAR] - $1250",function(bool)
+                 local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[SilencerAR] - $1250")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+      
+              b:Button("[Silencer] - $400",function(bool)
+                     local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Silencer] - $400")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+              b:Button("[Skull Mask] - $60",function(bool)
+                       local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Skull Mask] - $60")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+      
+              b:Button("[Surgeon Mask] - $25",function(bool)
+                local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Surgeon Mask] - $25")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+   
+              b:Button("[TacticalShotgun] - $1750",function(bool)
+                local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[TacticalShotgun] - $1750")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end)
+               b:Button("[Weights] - $120",function(bool)
+                   local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Weights] - $120") plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+               end) l:Button("Aimlock",  function(bool)
+        	getgenv().AimPart = "HumanoidRootPart"
+		getgenv().AimlockKey = "q"
+		getgenv().AimRadius = 30
+		getgenv().ThirdPerson = true
+		getgenv().FirstPerson = true
+		getgenv().TeamCheck = false
+		getgenv().PredictMovement = true
+		getgenv().PredictionVelocity = 9
+		local L_27_, L_28_, L_29_, L_30_ =
+			game:GetService "Players",
+		game:GetService "UserInputService",
+		game:GetService "RunService",
+		game:GetService "StarterGui"
+		local L_31_, L_32_, L_33_, L_34_, L_35_, L_36_, L_37_ =
+			L_27_.LocalPlayer,
+		L_27_.LocalPlayer:GetMouse(),
+		workspace.CurrentCamera,
+		CFrame.new,
+		Ray.new,
+		Vector3.new,
+		Vector2.new
+		local L_38_, L_39_, L_40_ = true, false, false
+		local L_41_
+		getgenv().CiazwareUniversalAimbotLoaded = true
+		getgenv().WorldToViewportPoint = function(L_42_arg0)
+			return L_33_:WorldToViewportPoint(L_42_arg0)
+		end
+		getgenv().WorldToScreenPoint = function(L_43_arg0)
+			return L_33_.WorldToScreenPoint(L_33_, L_43_arg0)
+		end
+		getgenv().GetObscuringObjects = function(L_44_arg0)
+			if L_44_arg0 and L_44_arg0:FindFirstChild(getgenv().AimPart) and L_31_ and L_31_.Character:FindFirstChild("Head") then
+				local L_45_ = workspace:FindPartOnRay(L_35_(L_44_arg0[getgenv().AimPart].Position, L_31_.Character.Head.Position))
+				if L_45_ then
+					return L_45_:IsDescendantOf(L_44_arg0)
+				end
+			end
+		end
+		getgenv().GetNearestTarget = function()
+			local L_46_ = {}
+			local L_47_ = {}
+			local L_48_ = {}
+			for L_50_forvar0, L_51_forvar1 in pairs(L_27_:GetPlayers()) do
+				if L_51_forvar1 ~= L_31_ then
+					table.insert(L_46_, L_51_forvar1)
+				end
+			end
+			for L_52_forvar0, L_53_forvar1 in pairs(L_46_) do
+				if L_53_forvar1.Character ~= nil then
+					local L_54_ = L_53_forvar1.Character:FindFirstChild("Head")
+					if getgenv().TeamCheck == true and L_53_forvar1.Team ~= L_31_.Team then
+						local L_55_ =
+							(L_53_forvar1.Character:FindFirstChild("Head").Position - game.Workspace.CurrentCamera.CFrame.p).magnitude
+						local L_56_ =
+							Ray.new(
+								game.Workspace.CurrentCamera.CFrame.p,
+								(L_32_.Hit.p - game.Workspace.CurrentCamera.CFrame.p).unit * L_55_
+							)
+						local L_57_, L_58_ = game.Workspace:FindPartOnRay(L_56_, game.Workspace)
+						local L_59_ = math.floor((L_58_ - L_54_.Position).magnitude)
+						L_47_[L_53_forvar1.Name .. L_52_forvar0] = {}
+						L_47_[L_53_forvar1.Name .. L_52_forvar0].dist = L_55_
+						L_47_[L_53_forvar1.Name .. L_52_forvar0].plr = L_53_forvar1
+						L_47_[L_53_forvar1.Name .. L_52_forvar0].diff = L_59_
+						table.insert(L_48_, L_59_)
+					elseif getgenv().TeamCheck == false and L_53_forvar1.Team == L_31_.Team then
+						local L_60_ =
+							(L_53_forvar1.Character:FindFirstChild("Head").Position - game.Workspace.CurrentCamera.CFrame.p).magnitude
+						local L_61_ =
+							Ray.new(
+								game.Workspace.CurrentCamera.CFrame.p,
+								(L_32_.Hit.p - game.Workspace.CurrentCamera.CFrame.p).unit * L_60_
+							)
+						local L_62_, L_63_ = game.Workspace:FindPartOnRay(L_61_, game.Workspace)
+						local L_64_ = math.floor((L_63_ - L_54_.Position).magnitude)
+						L_47_[L_53_forvar1.Name .. L_52_forvar0] = {}
+						L_47_[L_53_forvar1.Name .. L_52_forvar0].dist = L_60_
+						L_47_[L_53_forvar1.Name .. L_52_forvar0].plr = L_53_forvar1
+						L_47_[L_53_forvar1.Name .. L_52_forvar0].diff = L_64_
+						table.insert(L_48_, L_64_)
+					end
+				end
+			end
+			if unpack(L_48_) == nil then
+				return nil
+			end
+			local L_49_ = math.floor(math.min(unpack(L_48_)))
+			if L_49_ > getgenv().AimRadius then
+				return nil
+			end
+			for L_65_forvar0, L_66_forvar1 in pairs(L_47_) do
+				if L_66_forvar1.diff == L_49_ then
+					return L_66_forvar1.plr
+				end
+			end
+			return nil
+		end
+		L_32_.KeyDown:Connect(
+			function(L_67_arg0)
+				if L_67_arg0 == AimlockKey and L_41_ == nil then
+					pcall(
+						function()
+							if L_39_ ~= true then
+								L_39_ = true
+							end
+							local L_68_
+							L_68_ = GetNearestTarget()
+							if L_68_ ~= nil then
+								L_41_ = L_68_
+							end
+						end
+					)
+				elseif L_67_arg0 == AimlockKey and L_41_ ~= nil then
+					if L_41_ ~= nil then
+						L_41_ = nil
+					end
+					if L_39_ ~= false then
+						L_39_ = false
+					end
+				end
+			end
+		)
+		L_29_.RenderStepped:Connect(
+			function()
+				if getgenv().ThirdPerson == true and getgenv().FirstPerson == true then
+					if
+						(L_33_.Focus.p - L_33_.CoordinateFrame.p).Magnitude > 1 or
+						(L_33_.Focus.p - L_33_.CoordinateFrame.p).Magnitude <= 1
+					then
+						L_40_ = true
+					else
+						L_40_ = false
+					end
+				elseif getgenv().ThirdPerson == true and getgenv().FirstPerson == false then
+					if (L_33_.Focus.p - L_33_.CoordinateFrame.p).Magnitude > 1 then
+						L_40_ = true
+					else
+						L_40_ = false
+					end
+				elseif getgenv().ThirdPerson == false and getgenv().FirstPerson == true then
+					if (L_33_.Focus.p - L_33_.CoordinateFrame.p).Magnitude <= 1 then
+						L_40_ = true
+					else
+						L_40_ = false
+					end
+				end
+				if L_38_ == true and L_39_ == true then
+					if L_41_ and L_41_.Character and L_41_.Character:FindFirstChild(getgenv().AimPart) then
+						if getgenv().FirstPerson == true then
+							if L_40_ == true then
+								if getgenv().PredictMovement == true then
+									L_33_.CFrame =
+										L_34_(
+											L_33_.CFrame.p,
+											L_41_.Character[getgenv().AimPart].Position +
+											L_41_.Character[getgenv().AimPart].Velocity / PredictionVelocity
+										)
+								elseif getgenv().PredictMovement == false then
+									L_33_.CFrame = L_34_(L_33_.CFrame.p, L_41_.Character[getgenv().AimPart].Position)
+								end
+							end
+						elseif getgenv().ThirdPerson == true then
+							if L_40_ == true then
+								if getgenv().PredictMovement == true then
+									L_33_.CFrame =
+										L_34_(
+											L_33_.CFrame.p,
+											L_41_.Character[getgenv().AimPart].Position +
+											L_41_.Character[getgenv().AimPart].Velocity / PredictionVelocity
+										)
+								elseif getgenv().PredictMovement == false then
+									L_33_.CFrame = L_34_(L_33_.CFrame.p, L_41_.Character[getgenv().AimPart].Position)
+								end
+							end
+						end
+					end
+				end
+			end
+		)
+	end
+)
+l:Textbox("Aimlock Key", "Aimlock Key should be lowercase.", true, function(L_69_arg0)
+		getgenv().AimlockKey = L_69_arg0
+end)
+l:Textbox("Aimlock Prediction", "Customize your aimlock prediction", true, function(L_70_arg0)
+		PredictionVelocity = L_70_arg0
+end)
+l:Dropdown("AimPart",{"Head","UpperTorso","HumanoidRootPart", "LowerTorso"}, function(L_71_arg0)
+	getgenv().AimPart = L_71_arg0
+end)
+
+v:Toggle("Enable ESP",false, function(bool)
+    ESP:Toggle(bool)
+end)
+v:Toggle("Enable Tracers",false, function(bool)
+    ESP.Tracers = bool
+end)
+
+v:Toggle("Enable Names",false, function(bool)
+    ESP.Names = bool
+end)
+
+v:Toggle("Enable Boxes",false, function(bool)
+    ESP.Boxes = bool
+end)
+s:Button("Fly (X)",function(bool)
+
+    local plr = game.Players.LocalPlayer
+    local mouse = plr:GetMouse()
+    
+    localplayer = plr
+    
+    if workspace:FindFirstChild("Core") then
+    workspace.Core:Destroy()
+    end
+    
+    local Core = Instance.new("Part")
+    Core.Name = "Core"
+    Core.Size = Vector3.new(0.05, 0.05, 0.05)
+    
+    spawn(function()
+    Core.Parent = workspace
+    local Weld = Instance.new("Weld", Core)
+    Weld.Part0 = Core
+    Weld.Part1 = localplayer.Character.LowerTorso
+    Weld.C0 = CFrame.new(0, 0, 0)
+    end)
+    
+    workspace:WaitForChild("Core")
+    
+    local torso = workspace.Core
+    flying = true
+    local speed=10
+    local keys={a=false,d=false,w=false,s=false}
+    local e1
+    local e2
+    local function start()
+    local pos = Instance.new("BodyPosition",torso)
+    local gyro = Instance.new("BodyGyro",torso)
+    pos.Name="EPIXPOS"
+    pos.maxForce = Vector3.new(math.huge, math.huge, math.huge)
+    pos.position = torso.Position
+    gyro.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+    gyro.cframe = torso.CFrame
+    repeat
+    wait()
+    localplayer.Character.Humanoid.PlatformStand=true
+    local new=gyro.cframe - gyro.cframe.p + pos.position
+    if not keys.w and not keys.s and not keys.a and not keys.d then
+    speed=5
+    end
+    if keys.w then
+    new = new + workspace.CurrentCamera.CoordinateFrame.lookVector * speed
+    speed=speed+0
+    end
+    if keys.s then
+    new = new - workspace.CurrentCamera.CoordinateFrame.lookVector * speed
+    speed=speed+0
+    end
+    if keys.d then
+    new = new * CFrame.new(speed,0,0)
+    speed=speed+0
+    end
+    if keys.a then
+    new = new * CFrame.new(-speed,0,0)
+    speed=speed+0
+    end
+    if speed>10 then
+    speed=5
+    end
+    pos.position=new.p
+    if keys.w then
+    gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(-math.rad(speed*0),0,0)
+    elseif keys.s then
+    gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(math.rad(speed*0),0,0)
+    else
+    gyro.cframe = workspace.CurrentCamera.CoordinateFrame
+    end
+    until flying == false
+    if gyro then gyro:Destroy() end
+    if pos then pos:Destroy() end
+    flying=false
+    localplayer.Character.Humanoid.PlatformStand=false
+    speed=10
+    end
+    e1=mouse.KeyDown:connect(function(key)
+    if not torso or not torso.Parent then flying=false e1:disconnect() e2:disconnect() return end
+    if key=="w" then
+    keys.w=true
+    elseif key=="s" then
+    keys.s=true
+    elseif key=="a" then
+    keys.a=true
+    elseif key=="d" then
+    keys.d=true
+    elseif key=="x" then
+    if flying==true then
+    flying=false
+    else
+    flying=true
+    start()
+    end
+    end
+    end)
+    e2=mouse.KeyUp:connect(function(key)
+    if key=="w" then
+    keys.w=false
+    elseif key=="s" then
+    keys.s=false
+    elseif key=="a" then
+    keys.a=false
+    elseif key=="d" then
+    keys.d=false
+    end
+    end)
+    start()
+    end)
+
+    s:Button("Trashtalk (J)",function(bool)
+        local plr = game.Players.LocalPlayer
+        repeat wait() until plr.Character
+        local char = plr.Character
+        
+        local garbage = {
+        "ur bad";
+        "sonney boy";
+        "ez";
+        "get sh on";
+        "WYD";
+        "sit son";
+        "trash";
+        "LOL";
+        "LMAO";
+        "imagine being you right now";
+        "xd";
+        "don't try LOL";
+        "you lose";
+        "why do you even try";
+        "I didn't think being this bad was possible";
+        "leave";
+        "no skill";
+        "so sad man.";
+        "bad";
+        "you're nothing";
+        "lol";
+        "so trash";
+        "so bad";
+        "ur salty";
+        "salty";
+        "look he's mad";
+        "cry more";
+        "keep crying";
+        "cry baby";
+        "hahaha I won";
+        "no one likes u";
+        "run 1s seed";
+        "thank you for your time";
+        "you were so close!";
+        "better luck next time!";
+        "rodent";
+        "HAHA";
+        "ill 5-0";
+        "just quit";
+        "time to take out the trash";
+        "did you get worse?";
+        "I'm surprised you haven't quit yet";
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        }
+        
+        
+        function TrashTalk(inputObject, gameProcessedEvent)
+        if inputObject.KeyCode == Enum.KeyCode.J and gameProcessedEvent == false then        
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
+            garbage[math.random(1,#garbage)],
+            "All"
+        )
+        end
+        end
+        
+        game:GetService("UserInputService").InputBegan:connect(TrashTalk)
+        end)
+s:Button("Korblox Client Sided",function(bool)
+    local ply = game.Players.LocalPlayer
+local chr = ply.Character
+chr.RightLowerLeg.MeshId = "902942093"
+chr.RightLowerLeg.Transparency = "1"
+chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+chr.RightFoot.MeshId = "902942089"
+chr.RightFoot.Transparency = "1"
+end)
+    s:Button("Headless Client Sided",function(bool)
+        getgenv().game.Players.LocalPlayer.Character.Head.Transparency = 1
+        getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
+        getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
+    end)
