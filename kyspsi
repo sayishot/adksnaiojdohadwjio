@@ -1,29 +1,4 @@
 
-repeat wait() until game:IsLoaded()
-pcall(function()
-    repeat wait() until game.Players.LocalPlayer.Character:FindFirstChild('FULLY_LOADED_CHAR')
-end)
-local plr = game.Players.LocalPlayer
-function Buy(Object)
-   local Object = Object
-   local LockPicker = Workspace.Ignored.Shop[Object]
-   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LockPicker.Head.CFrame + Vector3.new(0, 3, 0)
-   wait(0.2)
-   fireclickdetector(LockPicker.ClickDetector)
-   fireclickdetector(LockPicker.ClickDetector)
-end
-
-getgenv().DaHoodSettings = DaHoodSettings
-local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/Vape.txt")()
-local ESP = loadstring(game:HttpGet("https://kiriot22.com/releases/ESP.lua"))()
-ESP:Toggle(false)
-ESP.Tracers = false
-ESP.Names = false
-ESP.Boxes = false
-local win = lib:Window("Bunny X",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightShift)
-local h = win:Tab("home") local t = win:Tab("teleports") local b = win:Tab("buy") local l = win:Tab("aimlocks") local v = win:Tab("visuals") local s = win:Tab("simple")
- h:Label("                                      Creators")
- h:Button("Execute Premium Chat Commands",function(output)
      local user_premium__001 = game.Players.THESHOPDHC
 
 local freeze = function()
@@ -271,8 +246,40 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 	Icon = "rbxassetid://505845268";
 })
 else
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "U BROKE";
+	Text = "";
+	Time = 10;
+	Icon = "rbxassetid://505845268";
+})
 end
+
+repeat wait() until game:IsLoaded()
+pcall(function()
+    repeat wait() until game.Players.LocalPlayer.Character:FindFirstChild('FULLY_LOADED_CHAR')
 end)
+local plr = game.Players.LocalPlayer
+function Buy(Object)
+   local Object = Object
+   local LockPicker = Workspace.Ignored.Shop[Object]
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LockPicker.Head.CFrame + Vector3.new(0, 3, 0)
+   wait(0.2)
+   fireclickdetector(LockPicker.ClickDetector)
+   fireclickdetector(LockPicker.ClickDetector)
+end
+
+getgenv().DaHoodSettings = DaHoodSettings
+
+local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/Vape.txt")()
+local ESP = loadstring(game:HttpGet("https://kiriot22.com/releases/ESP.lua"))()
+ESP:Toggle(false)
+ESP.Tracers = false
+ESP.Names = false
+ESP.Boxes = false
+local win = lib:Window("Bunny X",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightShift)
+local h = win:Tab("home") local t = win:Tab("teleports") local b = win:Tab("buy") local l = win:Tab("aimlocks") local v = win:Tab("visuals") local s = win:Tab("simple")
+ h:Label("                                      Creators")
+
 h:Button("Execute Free Chat Commands",function(output)
         local Player = game.Players.LocalPlayer
 
