@@ -1,5 +1,3 @@
-
-
 local webhookcheck =
    is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
    secure_load and "Sentinel" or
@@ -1066,10 +1064,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 	Time = 50;
 	Icon = "rbxassetid://505845268";
 })
-		end
-	end
 
-end)
 --// Premium User //--
 local user_premium__001 = game.Players.THESHOPDHC
 -----------------------------------------------------------------------
@@ -1355,5 +1350,5 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 	Icon = "rbxassetid://505845268";
 })
 else
-print("Pooron")
+end
 end
