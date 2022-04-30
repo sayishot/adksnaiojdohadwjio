@@ -766,6 +766,310 @@ end)
         getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
         getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
     end)
+    local Player = game.Players.LocalPlayer
+
+Player.Chatted:Connect(function(Chat)
+    if Chat == "/rejoin" or Chat == "/rj" then
+    local ts = game:GetService("TeleportService")
+    local p = game:GetService("Players").LocalPlayer
+    ts:Teleport(game.PlaceId, p)
+    end
+    if Chat == "/serverhop" or Chat == "/shop" then
+         local x = {}
+        for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
+            if type(v) == "table" and v.maxPlayers > v.playing and v.id ~= game.JobId then
+                x[#x + 1] = v.id
+            end
+        end
+        if #x > 0 then
+            game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, x[math.random(1, #x)])
+        else
+            print('failed to find server')
+        end
+    end
+    if Chat == "/korblox" or Chat == "/kb" then
+        local Leg = 'Right' 
+        local plr = game.Players.LocalPlayer
+        local char = plr.Character
+        if char.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+            char[Leg..'UpperLeg']:Destroy()
+            char[Leg..'LowerLeg']:Destroy()
+            char[Leg..'Foot']:Destroy()
+            else
+                char[Leg..' Leg']:Destroy()
+        end
+    end
+    if Chat == "/zoom" or Chat == "/infzoom" then
+        player.CameraMaxZoomDistance = math.huge
+    end
+    if Chat == "/fov" or Chat == "/fieldofview" then
+                if game.Workspace:FindFirstChildWhichIsA('Camera') then game.Workspace:FindFirstChildWhichIsA('Camera').FieldOfView = tonumber(arguments[2]) end
+end
+ if Chat == "/re" or Chat == "/reset" then
+     player.Character.Humanoid:Destroy()
+        wait(0.2)
+        for i, v in pairs(player.Character:GetChildren()) do
+            v:Destroy()
+        end
+ end
+ if Chat == "/sit" then
+      game.Players.LocalPlayer.Character.Humanoid.Sit = true
+ end
+ if Chat == "/faceless" or Chat == "/noface" then
+       player.Character.Head.face:Destroy()
+ end
+ if Chat == "/noclip" or Chat == "/clip" then
+     if Noclipping then
+            Noclipping:Disconnect()
+            Clip = true
+        else
+            Clip = false
+            wait(0.1)
+            local function NoclipLoop()
+                if Clip == false and game.Players.LocalPlayer.Character ~= nil then
+                    for _, child in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+                        if child:IsA("BasePart") and child.CanCollide == true and child.Name ~= floatName then
+                            child.CanCollide = false
+                        end
+                    end
+                end
+            end
+            Noclipping = game:GetService('RunService').Stepped:Connect(NoclipLoop)
+        end
+ end
+ if Chat == "/fly" or Chat == "/unfly" then
+    local plr = game.Players.LocalPlayer
+    local mouse = plr:GetMouse()
+    
+    localplayer = plr
+    
+    if workspace:FindFirstChild("Core") then
+    workspace.Core:Destroy()
+    end
+    
+    local Core = Instance.new("Part")
+    Core.Name = "Core"
+    Core.Size = Vector3.new(0.05, 0.05, 0.05)
+    
+    spawn(function()
+    Core.Parent = workspace
+    local Weld = Instance.new("Weld", Core)
+    Weld.Part0 = Core
+    Weld.Part1 = localplayer.Character.LowerTorso
+    Weld.C0 = CFrame.new(0, 0, 0)
+    end)
+    
+    workspace:WaitForChild("Core")
+    
+    local torso = workspace.Core
+    flying = true
+    local speed=10
+    local keys={a=false,d=false,w=false,s=false}
+    local e1
+    local e2
+    local function start()
+    local pos = Instance.new("BodyPosition",torso)
+    local gyro = Instance.new("BodyGyro",torso)
+    pos.Name="EPIXPOS"
+    pos.maxForce = Vector3.new(math.huge, math.huge, math.huge)
+    pos.position = torso.Position
+    gyro.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+    gyro.cframe = torso.CFrame
+    repeat
+    wait()
+    localplayer.Character.Humanoid.PlatformStand=true
+    local new=gyro.cframe - gyro.cframe.p + pos.position
+    if not keys.w and not keys.s and not keys.a and not keys.d then
+    speed=5
+    end
+    if keys.w then
+    new = new + workspace.CurrentCamera.CoordinateFrame.lookVector * speed
+    speed=speed+0
+    end
+    if keys.s then
+    new = new - workspace.CurrentCamera.CoordinateFrame.lookVector * speed
+    speed=speed+0
+    end
+    if keys.d then
+    new = new * CFrame.new(speed,0,0)
+    speed=speed+0
+    end
+    if keys.a then
+    new = new * CFrame.new(-speed,0,0)
+    speed=speed+0
+    end
+    if speed>10 then
+    speed=5
+    end
+    pos.position=new.p
+    if keys.w then
+    gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(-math.rad(speed*0),0,0)
+    elseif keys.s then
+    gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(math.rad(speed*0),0,0)
+    else
+    gyro.cframe = workspace.CurrentCamera.CoordinateFrame
+    end
+    until flying == false
+    if gyro then gyro:Destroy() end
+    if pos then pos:Destroy() end
+    flying=false
+    localplayer.Character.Humanoid.PlatformStand=false
+    speed=10
+    end
+    e1=mouse.KeyDown:connect(function(key)
+    if not torso or not torso.Parent then flying=false e1:disconnect() e2:disconnect() return end
+    if key=="w" then
+    keys.w=true
+    elseif key=="s" then
+    keys.s=true
+    elseif key=="a" then
+    keys.a=true
+    elseif key=="d" then
+    keys.d=true
+    elseif key=="x" then
+    if flying==true then
+    flying=false
+    else
+    flying=true
+    start()
+    end
+    end
+    end)
+    e2=mouse.KeyUp:connect(function(key)
+    if key=="w" then
+    keys.w=false
+    elseif key=="s" then
+    keys.s=false
+    elseif key=="a" then
+    keys.a=false
+    elseif key=="d" then
+    keys.d=false
+    end
+    end)
+    start()
+end
+ if Chat == "/dotlock" then
+     -- thusky old lock
+local CC = game:GetService"Workspace".CurrentCamera
+    local Plr
+    local enabled = falseWD
+    local accomidationfactor = 0.131
+    local mouse = game.Players.LocalPlayer:GetMouse()
+    local placemarker = Instance.new("Part", game.Workspace)
+
+    function makemarker(Parent, Adornee, Color, Size, Size2)
+        local e = Instance.new("BillboardGui", Parent)
+        e.Name = "PP"
+        e.Adornee = Adornee
+        e.Size = UDim2.new(Size, Size2, Size, Size2)
+        e.AlwaysOnTop = true
+        local a = Instance.new("Frame", e)
+        a.Size = UDim2.new(1, 0, 1, 0)
+        a.BackgroundTransparency = 0
+        a.BackgroundColor3 = Color
+        local g = Instance.new("UICorner", a)
+        g.CornerRadius = UDim.new(50, 50)
+        return(e)
+    end
+
+    
+    local data = game.Players:GetPlayers()
+    function noob(player)
+        local character
+        repeat wait() until player.Character
+        local handler = makemarker(guimain, player.Character:WaitForChild("HumanoidRootPart"), Color3.fromRGB(107, 184, 255), 0.3, 3)
+        handler.Name = player.Name
+        player.CharacterAdded:connect(function(Char) handler.Adornee = Char:WaitForChild("HumanoidRootPart") end)
+
+
+        spawn(function()
+            while wait() do
+                if player.Character then
+                    TextLabel.Text = player.Name..tostring(player:WaitForChild("leaderstats").Wanted.Value).." | "..tostring(math.floor(player.Character:WaitForChild("Humanoid").Health))
+                end
+            end
+        end)
+    end
+
+    for i = 1, #data do
+        if data[i] ~= game.Players.LocalPlayer then
+            noob(data[i])
+        end
+    end
+
+    game.Players.PlayerAdded:connect(function(Player)
+        noob(Player)
+    end)
+
+    spawn(function()
+        placemarker.Anchored = true
+        placemarker.CanCollide = false
+        placemarker.Size = Vector3.new(8, 8, 8)
+        placemarker.Transparency = 0.75
+        makemarker(placemarker, placemarker, Color3.fromRGB(82, 112, 234), 0.40, 0)
+    end)    
+
+mouse.KeyDown:Connect(function(k)
+    if k ~= "q" then return end
+    if enabled then
+        enabled = false
+        guimain[Plr.Name].Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    else
+        enabled = true 
+        Plr = getClosestPlayerToCursor()
+        guimain[Plr.Name].Frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+    end    
+end)
+
+    function getClosestPlayerToCursor()
+        local closestPlayer
+        local shortestDistance = math.huge
+
+        for i, v in pairs(game.Players:GetPlayers()) do
+            if v ~= game.Players.LocalPlayer and v.Character and v.Character:FindFirstChild("Humanoid") and v.Character.Humanoid.Health ~= 0 and v.Character:FindFirstChild("HumanoidRootPart") then
+                local pos = CC:WorldToViewportPoint(v.Character.PrimaryPart.Position)
+                local magnitude = (Vector2.new(pos.X, pos.Y) - Vector2.new(mouse.X, mouse.Y)).magnitude
+                if magnitude < shortestDistance then
+                    closestPlayer = v
+                    shortestDistance = magnitude
+                end
+            end
+        end
+        return closestPlayer
+    end
+
+    game:GetService"RunService".Stepped:connect(function()
+        if enabled and Plr.Character and Plr.Character:FindFirstChild("HumanoidRootPart") then
+            placemarker.CFrame = CFrame.new(Plr.Character.HumanoidRootPart.Position+(Plr.Character.HumanoidRootPart.Velocity*accomidationfactor))
+        else
+            placemarker.CFrame = CFrame.new(0, 9999, 0)
+        end
+    end)
+
+    local mt = getrawmetatable(game)
+    local old = mt.__namecall
+    setreadonly(mt, false)
+    mt.__namecall = newcclosure(function(...)
+        local args = {...}
+        if enabled and getnamecallmethod() == "FireServer" and args[2] == "UpdateMousePos" then
+            args[3] = Plr.Character.HumanoidRootPart.Position+(Plr.Character.HumanoidRootPart.Velocity*accomidationfactor)
+            return old(unpack(args))
+        end
+        return old(...)
+    end)
+    end
+end)
+if Chat == "/cmds" then
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Cmds:";
+	Text = "/dotlock /fly /noclip /clip /kb /korblox /rejoin /rj /shop /serverhop /faceless /noface /fov /zoom /infzoom /sit /re /reset";
+	Time = 50;
+	Icon = "rbxassetid://505845268";
+})
+		end
+	end
+
+end)
 --// Premium User //--
 local user_premium__001 = game.Players.THESHOPDHC
 -----------------------------------------------------------------------
