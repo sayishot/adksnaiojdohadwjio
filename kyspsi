@@ -5,7 +5,7 @@ local win = lib:Window("Bunny X Key System",Color3.fromRGB(44, 120, 224), Enum.K
 local tab = win:Tab("Key Here")
 
 tab:Textbox("Enter Key Here",true, function(text)
-    local key = "BunnyX"
+    local key = "K4SNLGG4S"
     if text == key then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/sayishot/adksnaiojdohadwjio/main/script'))()
     end
