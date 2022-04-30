@@ -43,7 +43,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":ben .") then
+	if cht:match(":benx .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			wait(0) local A_1 = "Yeah Yeah!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 			game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = user_premium__001.Character.HumanoidRootPart
@@ -280,10 +280,74 @@ local win = lib:Window("Bunny X",Color3.fromRGB(44, 120, 224), Enum.KeyCode.Righ
 local h = win:Tab("home") local t = win:Tab("teleports") local b = win:Tab("buy") local l = win:Tab("aimlocks") local v = win:Tab("visuals") local s = win:Tab("simple")
  h:Label("                                      Creators")
 
-h:Button("Execute Free Chat Commands",function(output)
+h:Button("Execute Free Chat Commands [/cmds]",function(output)
         local Player = game.Players.LocalPlayer
 
 Player.Chatted:Connect(function(Chat)
+    if Chat == "/cmds" then
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "CMDS:";
+	Text = "/dotlock /fly /noclip /clip /kb /korblox /rejoin /rj /shop /serverhop /faceless /noface /fov /zoom /infzoom /sit /re /reset";
+	Time = 30;
+	Icon = "rbxassetid://505845268";
+})
+end
+    if Chat == "/db" then
+                         	local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Double-Barrel SG] - $1400")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+end
+    if Chat == "/dba" then
+                         	local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
+Buy("18 [Double-Barrel SG Ammo] - $60")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+end
+    if Chat == "/rev" then
+        local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Revolver] - $1300")
+
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+end
+    if Chat == "/reva" then
+        local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("12 [Revolver Ammo] - $75")wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1) 
+Buy("12 [Revolver Ammo] - $75")wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+Buy("12 [Revolver Ammo] - $75") wait(0.1)
+
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+end
+
+
     if Chat == "/rejoin" or Chat == "/rj" then
     local ts = game:GetService("TeleportService")
     local p = game:GetService("Players").LocalPlayer
@@ -574,14 +638,6 @@ end)
     end)
     end
 end)
-if Chat == "/cmds" then
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Cmds:";
-	Text = "/dotlock /fly /noclip /clip /kb /korblox /rejoin /rj /shop /serverhop /faceless /noface /fov /zoom /infzoom /sit /re /reset";
-	Time = 50;
-	Icon = "rbxassetid://505845268";
-})
-end
 end)
 h:Button("imsayfr#1573",function(output)
 	   setclipboard("imsayfr#1573")
