@@ -1051,9 +1051,5 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 	Icon = "rbxassetid://505845268";
 })
 else
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "No Premium!";
-	Text = "D:";
-	Time = 10;
-})
+print("Pooron")
 end
