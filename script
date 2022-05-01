@@ -1,5 +1,5 @@
 --The numbers are UserIds.
 whitelist = {
-[3181671123] = true
+[1] = true
 }
 return whitelist
