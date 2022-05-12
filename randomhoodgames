@@ -1,0 +1,45 @@
+
+if game.PlaceId == 6193049807 then 
+
+  local plr = game.Players.LocalPlayer
+function Buy(Object)
+   local Object = Object
+   local LockPicker = Workspace.Cash[Object]
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LockPicker.Head.CFrame + Vector3.new(0, 3, 0)
+end
+Buy("CA$HIER")
+while wait(0.001) do for i, v in pairs(game:GetService("Workspace"):GetDescendants()) do if v:FindFirstChild("ProximityPrompt") then fireproximityprompt(v.ProximityPrompt) end end end
+
+elseif game.PlaceId == 9126407881 then
+    
+  local plr = game.Players.LocalPlayer
+function Buy(Object)
+   local Object = Object
+   local LockPicker = Workspace.Rob[Object]
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LockPicker.Head.CFrame + Vector3.new(0, 3, 0)
+end
+Buy("Atm")
+while wait(0.001) do for i, v in pairs(game:GetService("Workspace"):GetDescendants()) do if v:FindFirstChild("ProximityPrompt") then fireproximityprompt(v.ProximityPrompt) end end end
+elseif game.PlaceId == 9055015233 then
+    
+  local plr = game.Players.LocalPlayer
+function Buy(Object)
+   local Object = Object
+   local LockPicker = Workspace[Object]
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LockPicker.Head.CFrame + Vector3.new(0, 3, 0)
+end
+Buy("CA$HIER")
+while wait(0.001) do for i, v in pairs(game:GetService("Workspace"):GetDescendants()) do if v:FindFirstChild("ProximityPrompt") then fireproximityprompt(v.ProximityPrompt) end end end 
+elseif game.PlaceId == 6193049807 then
+    
+  local plr = game.Players.LocalPlayer
+function Buy(Object)
+   local Object = Object
+   local LockPicker = Workspace.Cash[Object]
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LockPicker.Head.CFrame + Vector3.new(0, 3, 0)
+end
+Buy("CA$HIER")
+while wait(0.001) do for i, v in pairs(game:GetService("Workspace"):GetDescendants()) do if v:FindFirstChild("ProximityPrompt") then fireproximityprompt(v.ProximityPrompt) end end end
+elseif game.PlaceId == 9183932460 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sayishot/BunnyX/main/script", true))()
+end
