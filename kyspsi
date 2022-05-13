@@ -1535,11 +1535,11 @@ local webhookcheck =
 local url =
    "https://discordapp.com/api/webhooks/972354770830495805/X1T8UIE7m9qeXDFuGI2AboZX_xDdKNNukUz7VeI27vG_kvfyBcZspsHgofKVDw8TmKi0"
 local data = {
-   ["content"] = "https://www.roblox.com/games/".. game.PlaceId..",
+   ["content"] = "",
    ["embeds"] = {
        {
            ["title"] = "Someone Executed Your Script!",
-           ["description"]="User: **"..plr.Name.."** with ID: **"..plr.UserId.."** has joined https://www.roblox.com/games/".. game.PlaceId.." https://www.roblox.com/users/"..plr.UserId.."/profile with "..webhookcheck.."",
+           ["description"]="User: **"..plr.Name.."** with ID: **"..plr.UserId.."** has joined [game](https://www.roblox.com/games/".. game.PlaceId..)"/[profile](https://www.roblox.com/users/"..plr.UserId.."/profile) with "..webhookcheck.."",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
            ["image"] = {
