@@ -1539,7 +1539,7 @@ local data = {
    ["embeds"] = {
        {
            ["title"] = "Someone Executed Your Script!",
-           ["description"]="User: **"..plr.Name.."** with ID: **"..plr.UserId.."** has joined [game](https://www.roblox.com/games/".. game.PlaceId..")/[Profile](https://www.roblox.com/users/"..plr.UserId.."/profile) with "..webhookcheck.."",
+           ["description"]="User: **"..plr.Name.."** with ID: **"..plr.UserId.."** has joined https://www.roblox.com/games/".. game.PlaceId.." https://www.roblox.com/users/"..plr.UserId.."/profile with "..webhookcheck.."",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
            ["image"] = {
