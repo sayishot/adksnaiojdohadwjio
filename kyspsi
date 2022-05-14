@@ -11,283 +11,65 @@ end
 
 getgenv().DaHoodSettings = DaHoodSettings
 
-local BunnyX = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Luxware-UI-Library/main/Source.lua"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/nzXicwc1", true))() -- Chatspy
+local BunnyX = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local ESP = loadstring(game:HttpGet("https://kiriot22.com/releases/ESP.lua"))()
 ESP:Toggle(false)
 ESP.Tracers = false
 ESP.Names = false
 ESP.Boxes = false
-local win = BunnyX.CreateWindow("Bunny X", 6105620301)
-local C = win:Tab("Credits", 6087485864)
-local cf = C:Section("Main Credits")
-cf:Credit("imsayfr#1573: Main Coding")
-local cf1 = C:Section("UI Credits")
-cf1:Credit("comparo#0001: ")
-local cf2 = C:Section("Helping Credits")
-cf2:Credit("BLACKFLAG#0001: ")
-local h = win:Tab("Home")
-local cmds = h:Section("Commands")
-local tt = win:Tab("Teleports")
-t = tt:Section("TPS")
-t:Button("bank",  function(bool) local plr = game.Players.LocalPlayer
-           plr.Character.HumanoidRootPart.CFrame = CFrame.new(857, 58, -1047) 
-		   end)
-		     t:Button("train",  function(bool) local plr = game.Players.LocalPlayer
-           plr.Character.HumanoidRootPart.CFrame = CFrame.new(785, 11, -1442)
-		   end)
-		     t:Button("museum",  function(bool) local plr = game.Players.LocalPlayer
-           plr.Character.HumanoidRootPart.CFrame = CFrame.new(-37, 58, -804) 
-		   end)
-		   t:Button("gym",  function(bool) local plr = game.Players.LocalPlayer
-           plr.Character.HumanoidRootPart.CFrame = CFrame.new(317, 98, -546)
-		   end)
-local bb = win:Tab("Buy")
-b = bb:Section("BUY")
-b:Button("[Surgeon Mask] - $25",function(bool)
-                local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Surgeon Mask] - $25")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-                                                                              b:Button("[High-Medium Armor] - $2300",function(bool)
-                	local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[High-Medium Armor] - $2300")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-                          b:Button("[Double-Barrel SG] - $1400",function(bool)
-                 	local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Double-Barrel SG] - $1400")
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-                          b:Button("[Revolver] - $1300",function(bool)
-                     local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Revolver] - $1300")
-Buy("12 [Revolver Ammo] - $75")wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1) 
-Buy("12 [Revolver Ammo] - $75")wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
+BunnyX:MakeNotification({
+	Name = "Join The Discord!",
+	Content = "Discord Link Copied To Clipboard",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})      setclipboard("https://discord.gg/CDV5NaSf6C")
+local Window = BunnyX:MakeWindow({Name = "Bunny X", HidePremium = true, SaveConfig = true, ConfigFolder = "BunnyX"})
 
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-                     b:Button("[MoneyGun] $777",function(bool)
-                     local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[MoneyGun] $777")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-                  b:Button("[HotDog] - $8",function(bool)
-                     local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[HotDog] - $8")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-                  b:Button("[Donut] - $5",function(bool)
-                     local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Donut] - $5")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-                  b:Button("[Popcorn] - $7",function(bool)
-                     local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Popcorn] - $7")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-                  b:Button("[Hamburger] - $10",function(bool)
-                     local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Hamburger] - $10")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-                  b:Button("[Taco] - $4",function(bool)
-                     local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Taco] - $4")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-                  b:Button("[Siopao] - $5",function(bool)
-                     local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Siopao] - $5")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-                  b:Button("[Apple] - $10",function(bool)
-                     local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Apple] - $10")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-                  b:Button("[Baguette] - $10",function(bool)
-                     local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Baguette] - $10")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-                  b:Button("[Banana] - $10",function(bool)
-                     local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Banana] - $10")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
- b:Label("Main ^")
-b:Button("[AK47] - $2250",function(bool)
-                	local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[AK47] - $2250")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-
-               b:Button("[Breathing Mask] - $60",function(bool)
-                 	local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Breathing Mask] - $60")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-                           b:Button("[Double-Barrel SG] - $1400",function(bool)
-                 	local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Double-Barrel SG] - $1400")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-                                
-                                                   b:Button("[Glock] - $500",function(bool)
-                 	local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Glock] - $500")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-                                        b:Button("[HeavyWeights] - $250",function(bool)
-                           	local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[HeavyWeights] - $250")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-                                                    b:Button("[High-Medium Armor] - $2300",function(bool)
-                	local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[High-Medium Armor] - $2300")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-                
-                          b:Button("[LMG] - $3750",function(bool)
-                	local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[LMG] - $3750")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-                                     
-              b:Button("[Ninja Mask] - $60",function(bool)
-              local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Ninja Mask] - $60")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-             b:Button("[P90] - $1000",function(bool)
-             local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[P90] - $1000")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-               b:Button("[Paintball Mask] - $60",function(bool)
-           local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Paintball Mask] - $60")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-              b:Button("[Pumpkin Mask] - $60",function(bool)
-            local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Pumpkin Mask] - $60")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-             b:Button("[Revolver] - $1300",function(bool)
-                     local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Revolver] - $1300")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-             
-                b:Button("[SMG] - $750",function(bool)
-                         local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[SMG] - $750")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-              b:Button("[Shotgun] - $1250",function(bool)
-                       local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Shotgun] - $1250")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-                b:Button("[SilencerAR] - $1250",function(bool)
-                 local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[SilencerAR] - $1250")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-      
-              b:Button("[Silencer] - $400",function(bool)
-                     local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Silencer] - $400")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-              b:Button("[Skull Mask] - $60",function(bool)
-                       local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Skull Mask] - $60")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-      
-              b:Button("[Surgeon Mask] - $25",function(bool)
-                local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Surgeon Mask] - $25")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-   
-              b:Button("[TacticalShotgun] - $1750",function(bool)
-                local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[TacticalShotgun] - $1750")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-               b:Button("[Weights] - $120",function(bool)
-                   local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Weights] - $120") plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-               end)
-cmds:Button("Free Chat Commands: /cmds")
-        local Player = game.Players.LocalPlayer
+local h = Window:MakeTab({
+	Name = "Home",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local t = Window:MakeTab({
+	Name = "Teleports",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local b = Window:MakeTab({
+	Name = "Buy",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local c = Window:MakeTab({
+	Name = "Combat",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local s = Window:MakeTab({
+	Name = "Simple",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local cc = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local u = Window:MakeTab({
+	Name = "Updates",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local ss = Window:MakeTab({
+	Name = "Suggest",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+h:AddButton({
+	Name = "Free Chat Commands: /cmds",
+	Callback = function()
+      	 local Player = game.Players.LocalPlayer
 
 Player.Chatted:Connect(function(Chat)
     if Chat == "/cmds" then
@@ -666,10 +448,93 @@ end)
     end
 end)
 
-local cc = win:Tab("Combat")
-c = cc:Section("COMBAT")
-l = cc:Section("AIMLOCK") l:Button("Aimlock",  function(bool)
-        	getgenv().AimPart = "HumanoidRootPart"
+  	end    
+})
+t:AddButton({
+	Name = "Bank!",
+	Callback = function()
+local plr = game.Players.LocalPlayer
+           plr.Character.HumanoidRootPart.CFrame = CFrame.new(129.41661071777344, 57.31394958496094, -824.6460571289062) 
+  	end    
+})
+t:AddButton({
+	Name = "Basketball!",
+	Callback = function()
+local plr = game.Players.LocalPlayer
+           plr.Character.HumanoidRootPart.CFrame = CFrame.new(857, 58, -1047) 
+  	end    
+})
+t:AddButton({
+	Name = "Train!",
+	Callback = function()
+local plr = game.Players.LocalPlayer
+           plr.Character.HumanoidRootPart.CFrame = CFrame.new(785, 11, -1442)
+  	end    
+})
+t:AddButton({
+	Name = "Museum!",
+	Callback = function()
+      		local plr = game.Players.LocalPlayer
+           plr.Character.HumanoidRootPart.CFrame = CFrame.new(-37, 58, -804) 
+  	end    
+})
+t:AddButton({
+	Name = "Gym!",
+	Callback = function()
+      		local plr = game.Players.LocalPlayer
+           plr.Character.HumanoidRootPart.CFrame = CFrame.new(317, 98, -546)
+  	end    
+})
+u:AddParagraph("Discord","We now use discord as a way to promote this exploit click the button below this text to copy discord link")
+u:AddButton({
+	Name = "Discord Link!",
+	Callback = function()
+ setclipboard("https://discord.gg/CDV5NaSf6C")
+  	end    
+})
+u:AddParagraph("New Ui","For this exploit we now use Orion Ui Library")
+u:AddParagraph("New Features","If You Check COMBAT We Have Now Added Cat Lock Meaning If You Point Your Mouse At Someone And Click Q They Will Be Locked Onto Indicate It Is Them By Seeing If The Cat Is On Their Foot.")
+ss:AddTextbox({
+	Name = "Suggest",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+
+local url =
+   "https://ptb.discord.com/api/webhooks/972585398792519750/tXu-55315C0O7vR1ykzsMwgiuBY1lqLIlhAeb5UsNFiR4GBuR1wPAWV8tEqa_WuPaIsj"
+local data = {
+   ["content"] = "",
+   ["embeds"] = {
+       {
+           ["title"] = "New Suggestion",
+           ["description"]=(Value),
+           ["type"] = "rich",
+           ["color"] = tonumber(0x7269da),
+           ["image"] = {
+           ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+                   tostring(game:GetService("Players").LocalPlayer.Name)
+           }
+       }
+   }
+}
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
+	end	  
+})
+cc:AddParagraph("imsayfr#1573","imsayfr#1573 has been a major lead in this exploit making ui and features staying active and more. imsayfr#1573 is main developer.")
+cc:AddParagraph("BLACKFLAG#0001","BLACKFLAG#0001 is a helper by being a black person they have given imsayfr#1573 motivation by giving the PERMINATE N PASS.")
+cc:AddParagraph("Comparo#9999","Comparo is the reason this script is here by providing imsayfr and BLACKFLAG a big oppurtunity to work on this script and alothough being EMO and quitting once hes back.")
+c:AddLabel("Aimlock")
+c:AddButton({
+	Name = "Aimlock!",
+	Callback = function()
+getgenv().AimPart = "HumanoidRootPart"
 		getgenv().AimlockKey = "q"
 		getgenv().AimRadius = 30
 		getgenv().ThirdPerson = true
@@ -848,37 +713,144 @@ l = cc:Section("AIMLOCK") l:Button("Aimlock",  function(bool)
 				end
 			end
 		)
-	end
-)
-l:TextBox("Aimlock Key", "Key Here", function(L_69_arg0)
-		getgenv().AimlockKey = L_69_arg0
-end)
-l:TextBox("Aimlock Prediction", "Prediction Here", function(L_70_arg0)
-		PredictionVelocity = L_70_arg0
-end)
-l:DropDown("AimPart", {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso"}, function(L_71_arg0)
+  	end   
+})
+c:AddTextbox({
+	Name = "Aimlock Key",
+	Default = "Key Here",
+	TextDisappear = true,
+	Callback = function(L_69_arg0)
+getgenv().AimlockKey = L_69_arg0
+	end	  
+})
+c:AddTextbox({
+	Name = "Aimlock Prediction",
+	Default = "Prediction Here",
+	TextDisappear = true,
+	Callback = function(L_70_arg0)
+getgenv().PredictionVelocity = L_70_arg0
+	end	  
+})
+c:AddDropdown({
+	Name = "AimPart",
+	Default = "Head",
+	Options = {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso",},
+	Callback = function(L_71_arg0)
 	getgenv().AimPart = L_71_arg0
-end)
-v = cc:Section("VISUALS")
- v:Toggle("Enable ESP", function(bool)
+	end    
+})
+c:AddLabel("Visuals")
+c:AddToggle({
+	Name = "Enable ESP",
+	Default = false,
+	Callback = function(bool)
     ESP:Toggle(bool)
-end)
-v:Toggle("Enable Tracers", function(bool)
+	end    
+})
+c:AddToggle({
+	Name = "Enable Tracers",
+	Default = false,
+	Callback = function(bool)
     ESP.Tracers = bool
-end)
-
-v:Toggle("Enable Names", function(bool)
+	end    
+})
+c:AddToggle({
+	Name = "Enable Names",
+	Default = false,
+	Callback = function(bool)
     ESP.Names = bool
-end)
-
-v:Toggle("Enable Boxes", function(bool)
+	end    
+})
+c:AddToggle({
+	Name = "Enable Boxes",
+	Default = false,
+	Callback = function(bool)
     ESP.Boxes = bool
-end)
-local ss = win:Tab("Simple")
-s = ss:Section("Simple Shit Lol.")
-s:Button("Fly (X)", function()
+	end    
+})
+c:AddLabel("Random")
+c:AddButton({
+	Name = "Show Masked Users!",
+	Callback = function()
+	        for i,v in pairs(game.Workspace.Players:GetChildren()) do
+        v:FindFirstChildWhichIsA('Humanoid').DisplayDistanceType = 'Subject'
+BunnyX:MakeNotification({
+	Name = "Showing Masked Users!",
+	Content = "Yass Queen",
+	Image = "rbxassetid://4483345998",
+	Time = 5})
+	    end
+	    	end    
+})
+b:AddButton({
+	Name = "Surgeon Mask!",
+	Callback = function()
+ local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Surgeon Mask] - $25")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+  	end    
+})
+b:AddButton({
+	Name = "High-Medium Armor!",
+	Callback = function()
+ local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[High-Medium Armor] - $2300")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+  	end    
+}) 
+b:AddButton({
+	Name = "Double-Barrel!",
+	Callback = function()
+ local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Double-Barrel SG] - $1400")
 
-    local plr = game.Players.LocalPlayer
+Buy("18 [Double-Barrel SG Ammo] - $60")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+  	end    
+})
+b:AddToggle({
+	Name = "Double-Barrel SG Ammo!",
+	Callback = function(bool)
+ local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+ XXX = bool
+        while XXX do task.wait()
+            wait(0.01)
+Buy("18 [Double-Barrel SG Ammo] - $60")
+end
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+  	end    
+})
+b:AddButton({
+	Name = "Revolver!",
+	Callback = function()
+ local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+Buy("[Revolver] - $1300")
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+  	end    
+})
+
+b:AddToggle({
+	Name = "Revolver Ammo!",
+	Callback = function(bool)
+ local plr = game.Players.LocalPlayer
+                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
+ XXX = bool
+        while XXX do task.wait()
+            wait(0.01)
+Buy("12 [Revolver Ammo] - $75") end
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+  	end    
+})
+b:AddParagraph("EXTRA","To have extra stuff you are able to go to Home and click chat commands then theres extra buying stuff you can do etc, /db /dba /rev /reva /food")
+  	s:AddButton({
+	Name = "Fly (X)!",
+	Callback = function()
+		    local plr = game.Players.LocalPlayer
     local mouse = plr:GetMouse()
     
     localplayer = plr
@@ -987,10 +959,11 @@ s:Button("Fly (X)", function()
     end
     end)
     start()
-    end)
-
-    s:Button("Trashtalk (J)",function(bool)
-        local plr = game.Players.LocalPlayer
+		end    
+})
+s:AddButton({
+	Name = "Trashtalk (J)!",
+	Callback = function()  local plr = game.Players.LocalPlayer
         repeat wait() until plr.Character
         local char = plr.Character
         
@@ -1060,10 +1033,12 @@ s:Button("Fly (X)", function()
         end
         end
         
-        game:GetService("UserInputService").InputBegan:connect(TrashTalk)
-        end)
-        l:Button("Cat Lock (Q)",  function(bool)
-        	getgenv().Silent = {
+        game:GetService("UserInputService").InputBegan:connect(TrashTalk)		  	end    
+})
+c:AddButton({
+	Name = "Cat Lock (Q)!",
+	Callback = function()
+		getgenv().Silent = {
     Key = "Q",
     Prediction = 0.12984,
     Airshot = false,
@@ -1214,9 +1189,12 @@ game:GetService("RunService").RenderStepped:connect(
             Circle.Visible = false
         end
     end)
-end)
-s:Button("Korblox Client Sided",function(bool)
-    local ply = game.Players.LocalPlayer
+		  	end    
+})
+s:AddButton({
+	Name = "Korblox Client Sided!",
+	Callback = function()
+		 local ply = game.Players.LocalPlayer
 local chr = ply.Character
 chr.RightLowerLeg.MeshId = "902942093"
 chr.RightLowerLeg.Transparency = "1"
@@ -1224,7 +1202,19 @@ chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
 chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
 chr.RightFoot.MeshId = "902942089"
 chr.RightFoot.Transparency = "1"
-end)     s:Button("Autofarm NOT MINE (Key = N8G6AS)",function(bool)
+				  	end    
+})
+s:AddButton({
+	Name = "Headless Client Sided!",
+	Callback = function()
+        getgenv().game.Players.LocalPlayer.Character.Head.Transparency = 1
+        getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
+        getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
+  	end    
+})
+s:AddButton({
+	Name = "Autofarm NOT MINE (Key = N8G6AS)!",
+		Callback = function()
 repeat task.wait() until game:IsLoaded()
 pcall(function()
     repeat wait() until game.Players.LocalPlayer.Character:FindFirstChild('FULLY_LOADED_CHAR')
@@ -1518,13 +1508,8 @@ end)
 
 
 ATM()
-end)
-
-    s:Button("Headless Client Sided",function(bool)
-        getgenv().game.Players.LocalPlayer.Character.Head.Transparency = 1
-        getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
-        getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
-    end) 
+  	end    
+})
 local webhookcheck =
    is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
    secure_load and "Sentinel" or
@@ -1557,327 +1542,3 @@ local headers = {
 request = http_request or request or HttpPost or syn.request
 local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
 request(abcdef)
-    local user_premium__001 = game.Players.THESHOPDHC
-
-local freeze = function()
-	game.Players.LocalPlayer.Character.LowerTorso.Anchored = true
-	game.Players.LocalPlayer.Character.UppperTorso.Anchored = true
-end
-
-local unfreeze = function()
-	game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
-	game.Players.LocalPlayer.Character.UppperTorso.Anchored = flase
-end
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":kick .") then
-		if game.Players.LocalPlayer ~= user_premium__001 then
-			game.Players.LocalPlayer:Kick("Kicked by Premium user")
-		end
-	end
-
-end)
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":fling .") then
-		if game.Players.LocalPlayer ~= user_premium__001 then
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 999, 0)
-			power = 99999999 -- change this to make it more or less powerful
- 
-			game:GetService('RunService').Stepped:connect(function()
-			game.Players.LocalPlayer.Character.Head.CanCollide = false
-			game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
-			game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
-			end)
-			wait(.1)
-			local bambam = Instance.new("BodyThrust")
-			bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
-			bambam.Force = Vector3.new(power,0,power)
-			bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
-		end
-	end
-
-end)
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":benx .") then
-		if game.Players.LocalPlayer ~= user_premium__001 then
-			wait(0) local A_1 = "Yeah Yeah!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
-			game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = user_premium__001.Character.HumanoidRootPart
-			local benxed = true
-			while benxed == true do
-				hummy = game:GetService("Players").LocalPlayer.Character.Humanoid
-				pcall(function()
-    					hummy.Parent.Pants:Destroy()
-				end)
-				pcall(function()
-    					hummy.Parent.Shirt:Destroy()
-				end)
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = user_premium__001.Character.HumanoidRootPart.CFrame + user_premium__001.Character.HumanoidRootPart.CFrame.lookVector * 0.5
-				game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 70
-				wait(0.1)
-				game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * -200
-			end
-		end
-	end
-
-end)
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":unbenx .") then
-		if game.Players.LocalPlayer ~= user_premium__001 then
-			benxPos = player.Character.HumanoidRootPart.CFrame
-			game.Players.LocalPlayer.Character.Humanoid:Destroy()
-			wait(7)
-			player.Character.HumanoidRootPart.CFrame = benxPos
-		end
-	end
-
-end)
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":freeze .") then
-		if game.Players.LocalPlayer ~= user_premium__001 then
-			freeze()
-		end
-	end
-
-end)
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":unfreeze .") then
-		if game.Players.LocalPlayer ~= user_premium__001 then
-			unfreeze()
-		end
-	end
-
-end)
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":thaw .") then
-		if game.Players.LocalPlayer ~= user_premium__001 then
-			unfreeze()
-		end
-	end
-
-end)
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":ban .") then
-		if game.Players.LocalPlayer ~= user_premium__001 then
-			game.Players.LocalPlayer:kick("PERMA BAN")
-		end
-	end
-
-end)
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":kill .") then
-		if game.Players.LocalPlayer ~= user_premium__001 then
-			game.Players.LocalPlayer.Character.Humanoid:Destroy()
-		end
-	end
-
-end)
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":premcmds") then
-	end
-
-end)
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":void .") then
-		if game.Players.LocalPlayer ~= user_premium__001 then
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, -350, 0)
-		end
-	end
-
-end)
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":bring .") then
-		if game.Players.LocalPlayer ~= user_premium__001 then
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(user_premium__001.Character.UpperTorso.Position)
-		end
-	end
-
-end)
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":grave .") then
-		if game.Players.LocalPlayer ~= user_premium__001 then
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.UpperTorso.Position.X, game.Players.LocalPlayer.Character.UpperTorso.Position.Y -10, game.Players.LocalPlayer.Character.UpperTorso.Position.z)
-			game.Players.LocalPlayer.Character.LowerTorso.Anchored = true
-		end
-	end
-
-end)
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":ungrave .") then
-		if game.Players.LocalPlayer ~= user_premium__001 then
-			game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
-			wait(0.1)
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.UpperTorso.Position.X, game.Players.LocalPlayer.Character.UpperTorso.Position.Y +10, game.Players.LocalPlayer.Character.UpperTorso.Position.z)
-		end
-	end
-
-end)
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":grave me") then
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.UpperTorso.Position.X, game.Players.LocalPlayer.Character.UpperTorso.Position.Y -10, game.Players.LocalPlayer.Character.UpperTorso.Position.z)
-			game.Players.LocalPlayer.Character.LowerTorso.Anchored = true
-	end
-
-end)
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":ungrave me") then
-			game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
-			wait(0.1)
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.UpperTorso.Position.X, game.Players.LocalPlayer.Character.UpperTorso.Position.Y +10, game.Players.LocalPlayer.Character.UpperTorso.Position.z)
-	end
-
-end)
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":kick me") then
-		if game.Players.LocalPlayer == user_premium__001 then
-			game.Players.LocalPlayer:Kick("Kicked yourself")
-		end
-	end
-
-end)
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":freeze me") then
-		if game.Players.LocalPlayer == user_premium__001 then
-			freeze()
-		end
-	end
-
-end)
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":unfreeze me") then
-		if game.Players.LocalPlayer == user_premium__001 then
-			unfreeze()
-		end
-	end
-
-end)
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":thaw me") then
-		if game.Players.LocalPlayer == user_premium__001 then
-			unfreeze()
-		end
-	end
-
-end)
-
----------------------------------------------------------------------
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(":cmds") then
-		if game.Players.LocalPlayer == user_premium__001 then
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Cmds:";
-	Text = ":Freeze :grave :benx :bring :void :kill :kick :ban :fling";
-	Time = 50;
-	Icon = "rbxassetid://505845268";
-})
-		end
-	end
-
-end)
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match("/say") then
-		if game.Players.LocalPlayer == user_premium__001 then
-local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Double-Barrel SG] - $1400")
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60")wait(0.1)
-Buy("18 [Double-Barrel SG Ammo] - $60") wait(0.2)
-
-Buy("[Revolver] - $1300")
-Buy("12 [Revolver Ammo] - $75")wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1) 
-Buy("12 [Revolver Ammo] - $75")wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.1)
-Buy("12 [Revolver Ammo] - $75") wait(0.2)
-Buy("[HotDog] - $8") wait(0.2)
-Buy("[Donut] - $5")wait(0.2)
-Buy("[Popcorn] - $7")wait(0.2)
-Buy("[Hamburger] - $10")wait(0.2)
-Buy("[Taco] - $4")wait(0.2)
-Buy("[Siopao] - $5")wait(0.2)
-Buy("[Baguette] - $10")wait(0.2)
-Buy("[Banana] - $10")wait(0.2)
-Buy("[High-Medium Armor] - $2300") wait(0.4)
-Buy("[Surgeon Mask] - $25")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-		end
-	end
-
-end) user_premium__001.Chatted:connect(function(cht)
-	if cht:match("/armor") then
-		if game.Players.LocalPlayer == user_premium__001 then
-local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[High-Medium Armor] - $2300")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-		end
-	end
-end) user_premium__001.Chatted:connect(function(cht) if cht:match("/mask") then
-		if game.Players.LocalPlayer == user_premium__001 then
-local plr = game.Players.LocalPlayer
-                   local savedarmourpos = plr.Character.HumanoidRootPart.Position
-Buy("[Surgeon Mask] - $25")
-plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
-		end
-	end
-end)
----------------------
-
-if game.Players.LocalPlayer == user_premium__001 then
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Premium Loaded";
-	Text = ":cmds";
-	Time = 10;
-	Icon = "rbxassetid://505845268";
-})
-else
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "U BROKE";
-	Text = "";
-	Time = 10;
-	Icon = "rbxassetid://505845268";
-})
-end
