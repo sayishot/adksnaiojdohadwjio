@@ -527,9 +527,9 @@ local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
 request(abcdef)
 	end	  
 })
-cc:AddParagraph("imsayfr#1573","imsayfr#1573 has been a major lead in this exploit making ui and features staying active and more. imsayfr#1573 is main developer.")
-cc:AddParagraph("BLACKFLAG#0001","BLACKFLAG#0001 is a helper by being a black person they have given imsayfr#1573 motivation by giving the PERMINATE N PASS.")
-cc:AddParagraph("Comparo#9999","Comparo is the reason this script is here by providing imsayfr and BLACKFLAG a big oppurtunity to work on this script and alothough being EMO and quitting once hes back.")
+cc:AddParagraph("imsayfr#1573 / THESHOPDHC","imsayfr#1573 has been a major lead in this exploit making ui and features staying active and more. imsayfr#1573 is main developer.")
+cc:AddParagraph("BLACKFLAG#0001 / I9vegun","BLACKFLAG#0001 is a helper by being a black person they have given imsayfr#1573 motivation by giving the PERMINATE N PASS.")
+cc:AddParagraph("Comparo#9999 / Cxmparo","Comparo is the reason this script is here by providing imsayfr and BLACKFLAG a big oppurtunity to work on this script and alothough being EMO and quitting once hes back.")
 c:AddLabel("Aimlock")
 c:AddButton({
 	Name = "Aimlock!",
