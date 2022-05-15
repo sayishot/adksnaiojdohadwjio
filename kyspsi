@@ -1521,7 +1521,7 @@ local url =
    "https://discordapp.com/api/webhooks/972354770830495805/X1T8UIE7m9qeXDFuGI2AboZX_xDdKNNukUz7VeI27vG_kvfyBcZspsHgofKVDw8TmKi0"
 random = game.JobId
 local data = {
-   ["content"] = "",
+   ["content"] = "`https://www.roblox.com/games/".. game.PlaceId.."?serverJobId=" .. tostring(random) .. "`",
    ["embeds"] = {
        {
            ["title"] = "Someone Executed Your Script!",
