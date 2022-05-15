@@ -1521,12 +1521,12 @@ local url =
    "https://discordapp.com/api/webhooks/972354770830495805/X1T8UIE7m9qeXDFuGI2AboZX_xDdKNNukUz7VeI27vG_kvfyBcZspsHgofKVDw8TmKi0"
 random = game.JobId
 local data = {
-   ["content"] = "`https://www.roblox.com/games/".. game.PlaceId.."?serverJobId=" .. tostring(random) .. "`",
+   ["content"] = "",
    ["embeds"] = {
        {
-           ["title"] = "Someone Executed Your Script!",
-           ["description"]="User: **"..plr.Name.."** with ID: **"..plr.UserId.."** has joined [game](https://www.roblox.com/games/".. game.PlaceId.."?serverJobId=" .. tostring(random) .. ")/[user](https://www.roblox.com/users/"..plr.UserId.."/profile) with "..webhookcheck.."",
-           ["type"] = "rich",
+           ["title"] = "Bunny X Execution Request",
+           ["description"]="User: "..plr.Name.." ("..plr.UserId..")ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ Profile Link: https://www.roblox.com/users/"..plr.UserId.."/profile `https://www.roblox.com/games/".. game.PlaceId.."?serverJobId=" .. tostring(random) .. "`",
+         ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
            ["image"] = {
            ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
