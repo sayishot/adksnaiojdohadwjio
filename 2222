@@ -918,7 +918,10 @@ function Library:create(options)
 	})
 
 	rawset(mt, "creditsContainer", creditsTab.container)
-creditsTab:credit{Name = "devs", Description = "name of your devs", Discord = "discord server", V3rmillion = "v3r acc"}
+
+creditsTab:credit{Name = "Say", Description = "Main Dev", Discord = "say#0527", V3rmillion = "https://v3rmillion.net/member.php?action=profile&uid=2608228"}
+creditsTab:credit{Name = "Flag", Description = "Dev", Discord = "fl4re#0979"}
+creditsTab:credit{Name = "Comparo", Description = "Dev", Discord = "ego#0005"}
 	return mt
 end
 
