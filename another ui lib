@@ -432,7 +432,7 @@ function Library:create(options)
 	end
 
 	options = self:set_defaults({
-		Name = "Mercury",
+		Name = "Bunny X",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
 		Link = "https://github.com/deeeity/mercury-lib"
@@ -919,9 +919,9 @@ function Library:create(options)
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 
-	creditsTab:credit{Name = "Say", Description = "Bunny X Main Dev", Discord = "say#0527", V3rmillion = "THESHOPDHC"}
-	creditsTab:credit{Name = "Flag", Description = "Developer", Discord = "fl4re#0979"}
-        creditsTab:credit{Name = "Comparo", Description = "Developer", Discord = "ego#0005"}
+	creditsTab:credit{Name = "Abstract", Description = "UI Library Developer", Discord = "Abstract#8007", V3rmillion = "AbstractPoo"}
+	creditsTab:credit{Name = "Deity", Description = "UI Library Developer", Discord = "Deity#0228", V3rmillion = "0xDEITY"}
+
 	return mt
 end
 
