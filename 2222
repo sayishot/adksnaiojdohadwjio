@@ -919,10 +919,6 @@ function Library:create(options)
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 
-creditsTab:credit{Name = "Say", Description = "Bunny X Main Dev", Discord = "say#0527", V3rmillion = "THESHOPDHC"}
-	creditsTab:credit{Name = "Flag", Description = "Developer", Discord = "fl4re#0979, V3rmillion = ""}
-        creditsTab:credit{Name = "Comparo", Description = "Developer", Discord = "ego#0005, V3rmillion = ""}
-
 	return mt
 end
 
