@@ -435,7 +435,7 @@ function Library:create(options)
 		Name = "Bunny X",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = "https://discord.gg/NcANRq4E5n"
+		Link = "https://discord.gg/NcANRq4E5n/"
 	}, options)
 
 	if getgenv and getgenv().MercuryUI then
