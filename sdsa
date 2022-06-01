@@ -88,7 +88,7 @@ local Library = {
 		StrongText = {},
 		WeakText = {}
 	},
-	WelcomeText = nil,
+	WelcomeText = "Welcome To Bunny X",
 	DisplayName = nil,
 	DragSpeed = 0.06,
 	LockDragging = false,
