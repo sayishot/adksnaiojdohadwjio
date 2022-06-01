@@ -1,0 +1,157 @@
+[[
+Supported game list - 
+Tha Hood CONTENT DELETED
+Randomly Hood
+My Hood
+Untitled Hood
+Del Hood
+DV Hood
+Squid Game
+99% Fail Impossible Obby!
+Speed Simulator
+]]
+	if game.PlaceId == 6193049807 then 
+
+  local plr = game.Players.LocalPlayer
+function Buy(Object)
+   local Object = Object
+   local LockPicker = Workspace.Cash[Object]
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LockPicker.Head.CFrame + Vector3.new(0, 3, 0)
+end
+Buy("CA$HIER")
+while wait(0.001) do for i, v in pairs(game:GetService("Workspace"):GetDescendants()) do if v:FindFirstChild("ProximityPrompt") then fireproximityprompt(v.ProximityPrompt) end end end
+
+elseif game.PlaceId == 9126407881 then
+    
+  local plr = game.Players.LocalPlayer
+function Buy(Object)
+   local Object = Object
+   local LockPicker = Workspace.Rob[Object]
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LockPicker.Head.CFrame + Vector3.new(0, 3, 0)
+end
+Buy("Atm")
+while wait(0.001) do for i, v in pairs(game:GetService("Workspace"):GetDescendants()) do if v:FindFirstChild("ProximityPrompt") then fireproximityprompt(v.ProximityPrompt) end end end
+elseif game.PlaceId == 9055015233 then
+    
+  local plr = game.Players.LocalPlayer
+function Buy(Object)
+   local Object = Object
+   local LockPicker = Workspace[Object]
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LockPicker.Head.CFrame + Vector3.new(0, 3, 0)
+end
+Buy("CA$HIER")
+while wait(0.001) do for i, v in pairs(game:GetService("Workspace"):GetDescendants()) do if v:FindFirstChild("ProximityPrompt") then fireproximityprompt(v.ProximityPrompt) end end end 
+elseif game.PlaceId == 6193049807 then
+    
+  local plr = game.Players.LocalPlayer
+function Buy(Object)
+   local Object = Object
+   local LockPicker = Workspace.Cash[Object]
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LockPicker.Head.CFrame + Vector3.new(0, 3, 0)
+end
+Buy("CA$HIER")
+while wait(0.001) do for i, v in pairs(game:GetService("Workspace"):GetDescendants()) do if v:FindFirstChild("ProximityPrompt") then fireproximityprompt(v.ProximityPrompt) end end end
+elseif game.PlaceId == 9183932460 then
+_G.Key = ""loadstring(game:HttpGet("https://bunnyxontop.000webhostapp.com/BUNNYXONTOP"))()
+  elseif game.PlaceId == 9369376609 then
+  local plr = game.Players.LocalPlayer
+function Buy(Object)
+   local Object = Object
+   local LockPicker = Workspace.Model[Object]
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LockPicker.Head.CFrame + Vector3.new(0, 3, 0)
+end
+Buy("CA$HIER")
+while wait(0.001) do for i, v in pairs(game:GetService("Workspace"):GetDescendants()) do if v:FindFirstChild("ProximityPrompt") then fireproximityprompt(v.ProximityPrompt) end end end
+end
+elseif game.PlaceId == 9431306429 then
+
+while wait(0.01) do
+     for i, v in pairs(game:GetService("Workspace"):GetDescendants()) do if v:FindFirstChild("ProximityPrompt") then fireproximityprompt(v.ProximityPrompt) 
+function teleport ()                     local plr = game.Players.LocalPlayer
+                  plr.Character.HumanoidRootPart.CFrame = CFrame.new(-185.42334, 144.452393, 206.43367, -1.1920929e-07, 0, 1.00000012, 0, 1, 0, -1.00000012, 0, -1.1920929e-07)
+wait()      for i, v in pairs(game:GetService("Workspace"):GetDescendants()) do if v:FindFirstChild("ProximityPrompt") then fireproximityprompt(v.ProximityPrompt) 
+
+                  plr.Character.HumanoidRootPart.CFrame = CFrame.new(-227.151001, 146.357712, 283.941437, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+wait()      for i, v in pairs(game:GetService("Workspace"):GetDescendants()) do if v:FindFirstChild("ProximityPrompt") then fireproximityprompt(v.ProximityPrompt) 
+
+                  plr.Character.HumanoidRootPart.CFrame = CFrame.new(-140.92334, 144.452393, 206.43367, -1.1920929e-07, 0, 1.00000012, 0, 1, 0, -1.00000012, 0, -1.1920929e-07)
+wait()      for i, v in pairs(game:GetService("Workspace"):GetDescendants()) do if v:FindFirstChild("ProximityPrompt") then fireproximityprompt(v.ProximityPrompt) 
+
+                  plr.Character.HumanoidRootPart.CFrame = CFrame.new(-9.09779358, 128.051849, 208.076797, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+wait()      for i, v in pairs(game:GetService("Workspace"):GetDescendants()) do if v:FindFirstChild("ProximityPrompt") then fireproximityprompt(v.ProximityPrompt) 
+
+           plr.Character.HumanoidRootPart.CFrame = CFrame.new(-199.714691, 142.501587, 130.574692, -1.1920929e-07, 0, 1.00000012, 0, 1, 0, -1.00000012, 0, -1.1920929e-07)
+end
+    end   end end end end end end end end end
+pcall( teleport )
+wait()
+end
+elseif game.PlaceId == 7549229959 then
+local BunnyX = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = BunnyX:MakeWindow({Name = "Bunny X", HidePremium = true, SaveConfig = true, ConfigFolder = "BunnyX"})
+local h = Window:MakeTab({
+    Name = "Home",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+h:AddButton({
+    Name = "Win First Game",
+    Default = false,
+    Callback = function(fg)
+    local Person = game:GetService("Workspace").Game1.Person
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Person:FindFirstChild('HumanoidRootPart', true).CFrame
+    end    
+})
+h:AddButton({
+    Name = "Win Second Game",
+    Default = false,
+    Callback = function(fg)
+    game:GetService("ReplicatedStorage").Remotes.SugarHoneycomb:FireServer(true) 
+    end    
+})
+h:AddButton({
+    Name = "Win Third Game",
+    Default = false,
+    Callback = function(fg)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0, 50, 0)
+    end    
+})
+local RopeGame = false
+
+h:AddToggle({
+    Name = "Win rope game",
+    Default = false,
+    Callback = function(state)
+    RopeGame = state
+    end    
+})
+while wait() do
+    if RopeGame then
+        game:GetService("ReplicatedStorage").TugRemote:FireServer()
+    end
+end
+elseif game.PlaceId == 7549229959 then
+local a=game:GetService("Workspace")local b=game:GetService("Players")local c=b.LocalPlayer;local d=a:WaitForChild("Map"):WaitForChild("Game"):WaitForChild("Tiles")local e=Color3.fromRGB(198,237,255)d.DescendantAdded:Connect(function(f)if f.Name=="GlassShatter"then f.Parent.Color=Color3.new(1,0,0)local g=f.Parent.Parent.Name;if g=="Right"then g="Left"else g="Right"end;local h=f.Parent.Name:match("%d+")d[g]["Tile"..h].Color=Color3.new(0,1,0)end end)for i,f in next,d:GetDescendants()do if f:IsA("TouchTransmitter")then local j=f.Parent;j.Touched:Connect(function(k)if k.Transparency==1 then return end;local l=tick()+0.5;repeat task.wait()until tick()-l>0 or j.Transparency==1;local g=f.Parent.Parent.Name;if g=="Right"then g="Left"else g="Right"end;if j.Transparency==1 then j.Color=Color3.new(1,0,0)local h=f.Parent.Name:match("%d+")d[g]["Tile"..h].Color=Color3.new(0,1,0)elseif k.Parent.Humanoid.Health==100 then j.Color=Color3.new(0,1,0)local h=f.Parent.Name:match("%d+")d[g]["Tile"..h].Color=Color3.new(1,0,0)end end)end end;local m=loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/Just-Egg-Salad/roblox-scripts/main/uwuware'))()local n=m:CreateWindow("Memory by Say")n:AddButton({text="Clear Colors",callback=function()for i,f in next,d:GetDescendants()do if f:IsA("BasePart")then f.Color=e end end end})m:Init()
+	elseif game.PlaceId == 4586420508 then
+	while wait(0.1) do
+                        local plr = game.Players.LocalPlayer
+                   plr.Character.HumanoidRootPart.CFrame = CFrame.new(-336.7328796386719, 61.99298095703125, -1504.4747314453125)
+                  wait(0.2)   
+                  plr.Character.HumanoidRootPart.CFrame = CFrame.new(-359.6522521972656, 53.78435516357422, -1462.5963134765625)
+  local A_1 = "123ase"
+local Event = game:GetService("Workspace").Events.AddBite27
+Event:FireServer(A_1)
+local A_1 = 2
+local Event = game:GetService("ReplicatedStorage").ShopBuy
+Event:FireServer(A_1)
+    local A_1 = "\49\51\48\115\115\49"
+local Event = game:GetService("Workspace").PrestigeEvent.Prestige
+Event:FireServer(A_1)
+end
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+end
